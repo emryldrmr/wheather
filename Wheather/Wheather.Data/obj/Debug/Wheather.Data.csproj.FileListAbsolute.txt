@@ -1,0 +1,10 @@
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\Wheather.Data.dll.config
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\Wheather.Data.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\Wheather.Data.pdb
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\EntityFramework.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\EntityFramework.xml
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\obj\Debug\Wheather.Data.csprojResolveAssemblyReference.cache
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\obj\Debug\Wheather.Data.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Data\obj\Debug\Wheather.Data.pdb

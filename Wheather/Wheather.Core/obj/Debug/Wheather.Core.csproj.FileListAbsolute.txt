@@ -1,0 +1,13 @@
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\Wheather.Core.dll.config
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\Wheather.Core.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\Wheather.Core.pdb
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\EntityFramework.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\Wheather.Data.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\Wheather.Data.pdb
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\Wheather.Data.dll.config
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\EntityFramework.xml
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\obj\Debug\Wheather.Core.csprojResolveAssemblyReference.cache
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\obj\Debug\Wheather.Core.dll
+c:\users\birikim\documents\visual studio 2017\Projects\Wheather\Wheather.Core\obj\Debug\Wheather.Core.pdb

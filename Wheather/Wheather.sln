@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheather.Admin", "Wheather.Admin\Wheather.Admin.csproj", "{FA00DD28-3A1E-419D-90FE-4B89B9B0C007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheather.Data", "Wheather.Data\Wheather.Data.csproj", "{336F6B06-DA59-4205-AF95-971FFFF9F18F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheather.Core", "Wheather.Core\Wheather.Core.csproj", "{B3678123-B032-44F4-A546-DD827FE1BEFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA00DD28-3A1E-419D-90FE-4B89B9B0C007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA00DD28-3A1E-419D-90FE-4B89B9B0C007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA00DD28-3A1E-419D-90FE-4B89B9B0C007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA00DD28-3A1E-419D-90FE-4B89B9B0C007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{336F6B06-DA59-4205-AF95-971FFFF9F18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336F6B06-DA59-4205-AF95-971FFFF9F18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336F6B06-DA59-4205-AF95-971FFFF9F18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336F6B06-DA59-4205-AF95-971FFFF9F18F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3678123-B032-44F4-A546-DD827FE1BEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3678123-B032-44F4-A546-DD827FE1BEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3678123-B032-44F4-A546-DD827FE1BEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3678123-B032-44F4-A546-DD827FE1BEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

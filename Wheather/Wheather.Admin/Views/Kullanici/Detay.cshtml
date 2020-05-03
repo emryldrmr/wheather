@@ -1,0 +1,22 @@
+﻿@model Wheather.Data.Model.Kullanici
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <br />
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>@(Model.adsoyad)</h3>
+            <br />
+            <h5><b>@Html.DisplayNameFor(model => model.adsoyad) : </b>@Model.adsoyad</h5>
+            <h5><b>@Html.DisplayNameFor(model => model.email) : </b>@Model.email</h5>
+            <br />
+            <h5><a href="@Url.Action("Index","Home")">... </a></h5>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,65 @@
+﻿@model Wheather.Data.Model.Uygulama
+@{
+    ViewBag.Title = "Uygulama Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    @using (Html.BeginForm("Duzenle", "Uygulama", FormMethod.Post, new { enctype = "multipart/form-data", id = "UygulamaForm" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Circle Buttons -->
+                <div class="card shadow">
+                    <div class="card-header">
+                        <h6 class="m-0 font-weight-bold text-primary">Kullanıcı Ekle</h6>
+                    </div>
+                    <div class="card-body">
+                        <form role="form">
+                            <div class="form-group col-md-12">
+                                <label for="text">Uygulama Adı</label>
+                                @Html.TextBoxFor(x => x.adi, new { @class = "form-control border-input", id = "uygulamaadi", placeholder = "Uygulama Adı", required = "required" })
+                            </div>
+                            <br />
+                            <div class="form-group col-md-12">
+                                <label for="text">Uygulama Linki</label>
+                                @Html.TextBoxFor(x => x.url, new { @class = "form-control border-input", id = "uygulamaurl", placeholder = "Uygulama Link", required = "required" })
+                            </div>
+
+                            <br />
+                            <button type="submit" class="btn btn-primary" id="UygulamaDuzenle">Kaydet</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    }
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(document).on("click", "#UygulamaDuzenle", function () {
+            $('#UygulamaForm').ajaxForm({
+                success: function (response) {
+                    if (response.Success) {
+                        bootbox.alert(response.Message, function () {
+                            location.href = "/Uygulama/Index";
+                        });
+
+                    }
+                    else {
+                        bootbox.alert(response.Message, function () {
+                            // geridöndüğünde bir şey yapılması isteniyorsa buraya yazılır
+                        });
+                    }
+                }
+            })
+        })
+    })
+</script>
+

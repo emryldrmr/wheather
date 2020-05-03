@@ -1,0 +1,80 @@
+﻿@model Wheather.Data.Model.Uygulama
+@{
+    ViewBag.Title = "Uygulama Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <!-- Circle Buttons -->
+            <div class="card shadow">
+                <div class="card-header">
+                    <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
+                </div>
+                <div class="card-body">
+                    <div class="form-group col-md-12">
+                        @Html.TextBoxFor(x => x.url, new { @class = "form-control border-input", id = "url", placeholder = "url", required = "required" })
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Değer</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @if (Model.url.IndexOf("weatherstack") > 0)
+                                {
+                                    <tr>
+                                        <td id="tip"></td>
+                                    </tr>
+                                        <tr>
+                                            <td id="anlik"></td>
+                                        </tr>
+                                }
+                                else if (Model.url.IndexOf("aerisapi") > 0)
+                                {
+                                    <tr>
+                                        <td id="respon"></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="~/css/vendor/jquery/jquery.min.js"></script>
+<script>
+    Uygulama = new Object();
+    Uygulama.url = $("#url").val();
+
+    $(document).ready(function () {
+        //$("#j").click(function () {
+        $.getJSON(Uygulama.url, function (veri) {
+            $.each(veri.location, function (key, item) {
+                console.log(item);
+                $("#tip").append("" + key + ": " + item + "<br>")
+            });
+            $.each(veri.current, function (key, item) {
+                console.log(item);
+                $("#anlik").append("" + key + ": " + item + "<br>")
+            })
+            $.each(veri.response[0]["periods"][0], function (key, item) {
+                console.log(item);
+                $("#respon").append("" + key + ": " + item + "<br>")
+            })
+        })
+        //})
+    })
+</script>
